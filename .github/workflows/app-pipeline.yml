@@ -51,7 +51,7 @@ jobs:
           docker pull striumvar/simple-java-maven-app:latest
           OUTPUT=$(docker run --rm striumvar/simple-java-maven-app:latest)
           echo "Container output: $OUTPUT"
-          if [ "$OUTPUT" != "Hello world!" ]; then
+          if [ "$OUTPUT" != "Hello World!" ]; then
             echo "Verification failed: unexpected output"
             exit 1
           fi
