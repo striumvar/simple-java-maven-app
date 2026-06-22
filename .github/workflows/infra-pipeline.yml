@@ -36,7 +36,7 @@ jobs:
           docker pull 235527546068.dkr.ecr.us-east-1.amazonaws.com/simple-java-maven-app:latest
           OUTPUT=$(docker run --rm 235527546068.dkr.ecr.us-east-1.amazonaws.com/simple-java-maven-app:latest)
           echo "Container output: $OUTPUT"
-          if echo "$OUTPUT" | grep -q "Hello world"; then
+          if echo "$OUTPUT" | grep -q "Hello World"; then
             echo "Verification passed"
           else
             echo "Verification failed: unexpected output"
